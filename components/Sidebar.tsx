@@ -6,7 +6,7 @@ import icon from "@/images/icon.png";
 import Link from "next/link";
 import { Autocomplete, AutocompleteItem } from "@nextui-org/autocomplete";
 import { animals } from "@/data/servers";
-import { BarChart, Server } from "lucide-react";
+import { BarChart, Server, Settings, Users2 } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -35,7 +35,27 @@ const Sidebar = () => {
             variant="faded"
             startContent={<BarChart size={20} />}
           >
-            dashboard
+            Dashboard
+          </Button>
+        </Link>
+        <Link className="w-full" href={"/settings"}>
+          <Button
+            fullWidth
+            size="lg"
+            variant="faded"
+            startContent={<Settings size={20} />}
+          >
+            Settings
+          </Button>
+        </Link>
+        <Link className="w-full" href={"/players"}>
+          <Button
+            fullWidth
+            size="lg"
+            variant="faded"
+            startContent={<Users2 size={20} />}
+          >
+            Players
           </Button>
         </Link>
       </div>
