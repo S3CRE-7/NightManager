@@ -1,4 +1,4 @@
-# Next.js & NextUI Template
+# Night Manger for managing minecraft servers
 
 This is gui for creating self minecraft hosting
 
